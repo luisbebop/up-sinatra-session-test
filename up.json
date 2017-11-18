@@ -1,0 +1,15 @@
+{
+  "name": "up-sinatra-session-test",
+  "hooks": {
+    "build": "bundle exec rake up:package"
+  },
+  "proxy": {
+    "command": "./up-init-server.sh"
+  },
+  "lambda": {
+    "memory": 1024
+  },
+  "environment": {
+    "SESSION_SECRET": "13be0da71545ec117917957117002def605307b7995ed568a0e06422eab6ea06617f56c960dd30066dcd09b43b60f370e9258f5322ff588ec44dc16399c78656"
+  }
+}
